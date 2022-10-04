@@ -1,0 +1,73 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background:linear-gradient(75deg, purple, grey) ;
+}
+header{
+  font-size: 3rem;
+  text-shadow: 0px 5px 10px yellow;
+  text-align: center;
+  margin-bottom: 2rem;
+
+}
+.list_container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 0 1rem 0 3rem;
+}
+.list_container > .detailsBox{
+  width: 400px;
+  height: 200px;
+  box-shadow: 0px 5px 10px;
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+.zemi_image{
+width: 10rem;
+height: 10rem;
+border-radius: 100%;
+margin: 0 auto;
+}
+.modal{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(22, 230, 46, 0.5);
+  opacity: 0.8;
+}
+.show_modal{
+display: block;
+}
+.modal_content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  /* height: 200px; */
+  background-color: #fff;
+  padding: 3rem;
+  display: grid;
+  place-content: center;
+  border-radius: 1rem;
+  z-index: 99999;
+}
+.modal_content > .modalImg{
+  z-index: 90;
+  width: 15rem;
+height: 15rem;
+border-radius: 1rem;
+margin: 0 auto;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h3>All Report</h3>
+        <table>
+            <thead>
+                <th>patientID</th>
+                <th>patientName</th>
+                <th>age</th>
+                <th>hospitalName</th>
+                <th>weight</th>
+                <th>height</th>
+                <th>bloodGroup</th>
+                <th>genotype</th>
+                <th>bloodPressure</th>
+                <th>HIV_status</th>
+                <th>hepatitis</th>
+                <th>createdBy</th>
+                <th>createdAt</th>
+                <th>updatedAt</th>
+            </thead>
+            <tbody id="reports">
+                <tr id="8ff8996f-d711-494b-bbf0-60784ae51947">
+                    <td headers="patientID">8ff8996f-d711-494b-bbf0-60784ae51947</td>
+                    <td headers="patientName">Tofi Agbaje</td>
+                    <td headers="age">27</td>
+                    <td headers="hospitalName">Premier</td>
+                    <td headers="weight">190</td>
+                    <td headers="height">182</td>
+                    <td headers="bloodGroup">B-</td>
+                    <td headers="genotype">AS</td>
+                    <td headers="bloodPressure">95</td>
+                    <td headers="HIV_status">Negative</td>
+                    <td headers="hepatitis">Negative</td>
+                    <td headers="createdBy">66624b2b-f32f-4ac3-9377-3d9e125d216f</td>
+                    <td headers="createdAt">2022-08-11 00:51:34.745 +00:00</td>
+                    <td headers="updatedAt">2022-08-11 00:54:09.236 +00:00</td>
+                </tr>
+                <tr>
+                    <button onclick="updateRecord">Edit</button>
+                    <button onclick="deleteRecord">Delete</button>
+                </tr>
+                <template></template>
+            </tbody>
+        </table>
+    </div>
+    <script src="/scripts/index.js"></script>
+</body>
+</html>

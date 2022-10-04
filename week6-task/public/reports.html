@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h3>All Report</h3>
+        <table>
+            <thead>
+                <th>patientID</th>
+                <th>patientName</th>
+                <th>age</th>
+                <th>hospitalName</th>
+                <th>weight</th>
+                <th>height</th>
+                <th>bloodGroup</th>
+                <th>genotype</th>
+                <th>bloodPressure</th>
+                <th>HIV_status</th>
+                <th>hepatitis</th>
+                <th>createdBy</th>
+                <th>createdAt</th>
+                <th>updatedAt</th>
+            </thead>
+            <tbody id="reports">
+                <template id="single-report">
+                    <tr id="8ff8996f-d711-494b-bbf0-60784ae51947">
+                        <td headers="patientID"></td>
+                        <td headers="patientName"></td>
+                        <td headers="age"></td>
+                        <td headers="hospitalName"></td>
+                        <td headers="weight"></td>
+                        <td headers="height"></td>
+                        <td headers="bloodGroup"></td>
+                        <td headers="genotype"></td>
+                        <td headers="bloodPressure"></td>
+                        <td headers="HIV_status"></td>
+                        <td headers="hepatitis"></td>
+                        <td headers="createdBy"></td>
+                        <td headers="createdAt"></td>
+                        <td headers="updatedAt"></td>
+                    </tr>
+                    <tr>
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+    </div>
+    <script src="/scripts/doctorReports.js"></script>
+</body>
+</html>
